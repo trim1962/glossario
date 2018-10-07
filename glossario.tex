@@ -20,17 +20,13 @@
 %\usepackage{lmodern} % load vector font
 \usepackage[T1]{fontenc} % font encoding
 \usepackage[utf8]{inputenc} % input encoding
-%\usepackage{noto}
 \usepackage[babel=true]{microtype}
 \usepackage{geometry}
 \usepackage{textcomp}
 \geometry{top=1.5cm,bottom=1.5cm}
 \usepackage{tkz-euclide}
-%\input{../Mod_base/grafica}
 \input{../Mod_base/matematica}
-
 \input{../Mod_base/pagina}
-%\setlength{\headheight}{13pt}
 \input{../Mod_base/indice}
 \input{../Mod_base/date}
 \input{../Mod_base/loghi}
@@ -47,13 +43,7 @@
 }
 \setglossarystyle{altlistgroup}
 \loadglsentries{glossari1}
-
-%\usepackage{imakeidx}
-%\makeindex[options=-s ../Mod_base/oldclaudio.sti]
-
-
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-
  \makeatletter
  \renewcommand\frontmatter{%
  	\cleardoublepage
@@ -67,12 +57,10 @@
  }
  \makeatother
 
-%\usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
+\usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
 % 10/02/2018 :: 20:05:58 :: \usepackage{parskip}
 \usepackage[toc,page]{appendix}
-
-\renewcommand{\appendixtocname}{Appendici}
-
+ \renewcommand{\appendixtocname}{Appendici}
 \renewcommand{\appendixpagename}{Appendici}
 \usepackage{tkz-berge}
 \usepackage[style=italian]{csquotes}
@@ -143,9 +131,9 @@ baseurl={http://breviariomatematico.altervista.org}
 			\end{tikzpicture}
 %		\end{center}
 
-%\makebox[\linewidth]{\centering
-%		Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
-%  \gitCommitterDate}
+\makebox[\linewidth]{\centering
+		Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
+  \gitCommitterDate}
 }
 		\end{titlepage}
 
